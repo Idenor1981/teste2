@@ -1,0 +1,5 @@
+Listar todos Clientes que não tenham realizado uma compra;
+SELECT A.CUSTOMER_ID FROM CUSTOMERS A
+	LEFT JOIN ORDERS B ON 
+	A.CUSTOMER_ID = B.CUSTOMER_ID
+WHERE B.ORDER_ID IS NULL 

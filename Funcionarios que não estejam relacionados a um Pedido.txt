@@ -1,0 +1,5 @@
+--Listar os Funcionarios que não estejam relacionados a um Pedido.
+SELECT A.STAFF_ID FROM STAFFS A
+	LEFT JOIN ORDER B ON 
+	A.A.STAFF_ID = B.STAFF_ID
+WHERE B.ORDER_ID IS NULL
